@@ -1,5 +1,5 @@
 # PCI-FPGA WISHBONE BUS XILINX XC3S400 @133MHZ
-The GitHub project "PCI-FPGA" is an open-source hardware design written in Verilog that implements a PCI (Peripheral Component Interconnect) interface on an FPGA (Field-Programmable Gate Array). The project targets Xilinx XC3S400 FPGA devices and uses a 133 MHz clock speed.
+The "PCI-FPGA" is an open-source hardware design written in Verilog that implements a PCI (Peripheral Component Interconnect) interface on an FPGA (Field-Programmable Gate Array). The project targets Xilinx XC3S400 FPGA devices and uses a 133 MHz clock speed.
 
 The design, named "TOP," provides an interface between a PCI bus and a Wishbone bus, which is a widely used standard for connecting digital components in an FPGA. The design contains a module "PCI_TPHY" that implements the physical layer of the PCI interface, and a module "WISHBONE" that implements the Wishbone bus interface.
 
