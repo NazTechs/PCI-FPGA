@@ -1,10 +1,9 @@
 # PCI-FPGA WISHBONE BUS XILINX XC3S400 @133MHZ
-The "PCI-FPGA WISHBONE BUS XILINX XC3S400 @133MHZ in verilog" is a module for communication between the Peripheral Component Interconnect (PCI) bus and Field-Programmable Gate Array (FPGA) circuits. The code was created on December 15th, 2018 and written in Verilog.
+The GitHub project "PCI-FPGA" is an open-source hardware design written in Verilog that implements a PCI (Peripheral Component Interconnect) interface on an FPGA (Field-Programmable Gate Array). The project targets Xilinx XC3S400 FPGA devices and uses a 133 MHz clock speed.
 
-This module provides an interface between the PCI bus and the FALC56 bus. The PCI bus is responsible for communication between the FPGA and other peripherals or devices connected to the computer. The FALC56 bus is an interface that allows communication between the FPGA and other digital circuits.
+The design, named "TOP," provides an interface between a PCI bus and a Wishbone bus, which is a widely used standard for connecting digital components in an FPGA. The design contains a module "PCI_TPHY" that implements the physical layer of the PCI interface, and a module "WISHBONE" that implements the Wishbone bus interface.
 
-The module takes in inputs such as PCI_RSTn_I, PCI_CLK_I, and PCI_IDEL_I and also outputs signals like PCI_INTAn, and wb_led. The inout signals of the module include PCI_FRAMEn_IO, PCI_IRDYn_IO, PCI_TRDYn_IO, and more. These signals allow for the exchange of data and control information between the PCI bus and the FPGA.
+The design has several inputs and outputs, including PCI signals such as PCI_RSTn_I, PCI_CLK_I, PCI_IDEL_I, and PCI_AD_IO. It also includes outputs for the FALC45 bus and the Wishbone bus, such as CLK_20MEG_FALC56_I and wb_led.
 
-The code instantiates the PCI_TPHY module to perform the physical layer operations for the PCI bus. This module handles the communication between the PCI bus and the FPGA, including the generation and detection of the PCI signals and control of the data transfer.
-
-In conclusion, the "PCI-FPGA WISHBONE BUS XILINX XC3S400 @133MHZ in verilog" provides an interface between the PCI bus and the FALC56 bus in an FPGA environment. This code can be used as a starting point for designing systems that require communication between the PCI bus and FPGA.
+The project was created on December 15, 2018, and its latest revision was 0.01. 
+In summary, the "PCI-FPGA" project is a hardware design that implements a PCI interface on an FPGA, connecting the PCI bus to a Wishbone bus. The design is written in Verilog and targets Xilinx XC3S400 FPGA devices.
